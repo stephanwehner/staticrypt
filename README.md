@@ -17,3 +17,18 @@ AES-256 is state of the art but brute-force/dictionnary attacks are trivial to d
 
 The concept is simple but this is a side project - not purporting to be bulletproof, feel free to contribute or report any thought to the GitHub project !
 
+## Improvements and development
+
+Browsers don't like to work with local files.
+
+But it's easy enough to run a simple server, for example,
+
+```
+$ ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => Dir.pwd).start'
+
+Then open http://localhost:8000 in your browser.
+
+Or 
+
+```
+$ python3 -m http.server 8000
